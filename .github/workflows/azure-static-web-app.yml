@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
+      with:
+          submodules: true
 
     - name: Deploy to Azure Static Web App
       uses: azure/static-web-apps-deploy@v1
